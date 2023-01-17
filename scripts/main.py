@@ -6,12 +6,12 @@ from bioimageio.core.build_spec import _write_sample_data
 import numpy as np
 import matplotlib.pyplot as plt
 
+# testing for 1 model rdf
 a_model = load_resource_description(cf.path_model_2)
-
 
 input_im = np.load(a_model.test_inputs[0])
 
-pixel_sizes = np.zeros_like(input.shape)
+
 
 in_axes = ["".join(a.axes) for a in a_model.inputs]
 out_axes = ["".join(a.axes) for a in a_model.outputs]
@@ -24,13 +24,23 @@ _write_sample_data(input_paths=a_model.test_inputs,
                    pixel_sizes=None)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('World')
+    tic = cf.datetime.now()
+    print("Creating tiffs from numpy test images. Started at: {}".format(tic))
+    rdf_paths = cf.read_rdf_paths()
 
-#_write_sample_data()
+    for i, rdf_path in enumerate(rdf_paths[0:3]):
+        tac = cf.datetime.now()
+        out_path = cf.gen_output_path(rdf_path)
+        cf.try_create_dir(out_path)
+        model = load_resource_description(cf.Path(rdf_path))
+        cf.write_tiff_images(model, out_path)
+        cf.write_numpy_info(model, out_path)
+
+        cf.print_elapsed_time(tac, "Completed model {}/{}".format(i,len(rdf_paths)))
+
+    cf.print_elapsed_time(tic,
+                          "Completed creation of tiffs for all {} models".format(len(rdf_paths)))
