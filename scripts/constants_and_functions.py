@@ -61,3 +61,10 @@ def write_numpy_info(model, output_path):
         content = str(list(data["images"][i].shape))
         with open(Path(output_path, data["filenames"][i]), 'w') as f:
             f.write(content)
+
+
+def write_failed_rdfs(failed_list, filename="../resources/failed_rdfs.txt"):
+    with open(filename, 'w') as f:
+        for line in failed_list:
+            f.write(line)
+            f.write('\n')
