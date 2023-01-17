@@ -19,6 +19,7 @@ absolute path: `C:\Users\hestevez\.conda\envs\bio-conv-weights\Lib\site-packages
 - [ ] save log of run for all models
 
 # Errors found
+- Failed 12/41 models. List written in ../resources/failed_rdfs.txt
 - 404 for urls of keras weights 
 - Usiigaci wrong axes AssertionError
 - other deepimagej model: wrong licence
