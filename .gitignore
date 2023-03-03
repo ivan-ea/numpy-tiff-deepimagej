@@ -4,6 +4,8 @@ scripts/.idea/
 scripts/*.tiff
 scripts/*.tif
 
+# local files 
+LOCAL*
 
 
 # Byte-compiled / optimized / DLL files
