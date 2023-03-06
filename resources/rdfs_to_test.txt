@@ -1,1 +1,1 @@
-C:/Users/hestevez/REPOS/CI-deepimagej-bioimage-io/java_CI_scripts/../bioimageio-gh-pages/rdfs/10.5281/zenodo.6079314/7695872/rdf.yaml
+C:/Users/hestevez/REPOS/CI-deepimagej-bioimage-io/java_CI_scripts/../bioimageio-gh-pages/rdfs/10.5281/zenodo.6200999/7690494/rdf.yaml

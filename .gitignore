@@ -7,6 +7,9 @@ scripts/*.tif
 # local files 
 LOCAL*
 
+# resources that change
+resources/rdfs_to_test.txt
+resources/failed_rdfs.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
