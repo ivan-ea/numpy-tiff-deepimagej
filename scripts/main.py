@@ -15,6 +15,10 @@ if __name__ == '__main__':
         out_path = cf.gen_output_path(rdf_path)
         cf.try_create_dir(out_path)
 
+        if cf.model_already_done(out_path):
+            print("Model already done!")
+            continue
+
         try:
             model = load_resource_description(cf.Path(rdf_path))
         except Exception:

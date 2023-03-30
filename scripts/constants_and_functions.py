@@ -33,6 +33,18 @@ def try_create_dir(path, verb=True):
             print("Dir exists: {}".format(path))
 
 
+def model_already_done(path, verb=True):
+    path = Path(path)
+    content = set(map(lambda x: x.name, path.glob("*")))
+    c1 = path.exists()
+    c2 = len(content) == 4
+    c3 = "sample_input_0.tif" in content
+    c4 = "sample_output_0.tif" in content
+    c5 = "input_shape.edn" in content
+    c6 = "output_shape.edn" in content
+    return c1 and c2 and c3 and c4 and c5 and c6
+
+
 def print_elapsed_time(tic, msg):
     tac = datetime.now()
     print("{} at: {}".format(msg, tac))
