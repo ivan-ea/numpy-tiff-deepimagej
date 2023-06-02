@@ -46,4 +46,4 @@ if __name__ == '__main__':
     cf.write_failed_logs(fails_log, fails_log_file)
 
     print("Failed {}/{} models. List written in {}".format(len(fails), len(rdf_paths), fails_file))
-    print("                    Log written in {}".format(fails_log_file))
+    print("                     Log written in {}".format(fails_log_file))
