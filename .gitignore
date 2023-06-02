@@ -1,8 +1,11 @@
+*.swp
 # idea
 scripts/.idea/
 # tiffs
 scripts/*.tiff
 scripts/*.tif
+
+#resources/*
 
 # local files 
 LOCAL*

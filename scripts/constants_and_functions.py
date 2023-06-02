@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 import numpy as np
 from bioimageio.core.build_spec import _write_sample_data
+import json
 
 COLLECTION_ROOT = Path("..", "..", "bioimageio-gh-pages", "rdfs")
 
@@ -80,3 +81,10 @@ def write_failed_rdfs(failed_list, filename="../resources/failed_rdfs.txt"):
         for line in failed_list:
             f.write(line)
             f.write('\n')
+
+
+def write_failed_logs(fail_log_dict, filename):
+    json_string = json.dumps(fail_log_dict, indent=4,)
+
+    with open(filename, "w") as output_file:
+        output_file.write(json_string)
