@@ -6,7 +6,7 @@ from bioimageio.core import load_resource_description
 if __name__ == '__main__':
     tic = cf.datetime.now()
     print("Creating tiffs from numpy test images. Started at: {}".format(tic))
-    rdf_paths = cf.read_rdf_paths()
+    rdf_paths = cf.read_rdf_paths("../resources/download_no-test-images.txt")
     fails = []
     fails_log = {}
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
             cf.write_numpy_info(model, out_path)
         except Exception as e:
             fails.append(rdf_path)
-            fails_log[rdf_path] = type(e).__name__ + "||" + e.args
+            fails_log[rdf_path] = type(e).__name__ + "||" + str(list(map(lambda x: str(x), e.args)))
             continue
 
         cf.print_elapsed_time(tac, "Completed model {}/{}".format(i+1, len(rdf_paths)))

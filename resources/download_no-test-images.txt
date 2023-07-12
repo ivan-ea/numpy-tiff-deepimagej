@@ -1,0 +1,10 @@
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.7380171\7405349\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.7315440\7315441\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.5910163\5942853\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.5910854\6539073\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\fiji\N2VSEMDemo\latest\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.7772662\7781091\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.6334583\7805434\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.6334383\7805067\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.6334881\7805026\rdf.yaml
+C:\Users\hestevez\REPOS\CI-deepimagej-bioimage-io\python_CI_scripts\..\bioimageio-gh-pages\rdfs\10.5281\zenodo.8064806\8073617\rdf.yaml
