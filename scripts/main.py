@@ -6,7 +6,8 @@ from bioimageio.core import load_resource_description
 if __name__ == '__main__':
     tic = cf.datetime.now()
     print("Creating tiffs from numpy test images. Started at: {}".format(tic))
-    rdf_paths = cf.read_rdf_paths("../resources/download_no-test-images.txt")
+    # select the proper file listing the local rdf paths
+    rdf_paths = cf.read_rdf_paths("../resources/all_models_to_test.txt")
     fails = []
     fails_log = {}
 
